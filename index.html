@@ -6,11 +6,15 @@
 <meta name="description" content="URL, RE">
 <script> 
 temp=location.href.split("?") 
-data=temp[1]
-//data=temp[1].split(":") 
-//code=data[0]
+//data=temp[1]
+data=temp[1].split(":") 
+type=data[0]
+code=data[1]
+if(type=="link"){
+location.href = "https://coupa.ng/"+code
+}else if(type=="iframe"){
 
-location.href = "https://coupa.ng/"+data
+}
 </script> 
 </HEAD>
 

@@ -7,18 +7,26 @@
 <script> 
 temp=location.href.split("?") 
 //data=temp[1]
-data=temp[1].split("=") 
-type=data[0]
-code=data[1]
-if(type=="link"){
-location.href = "https://coupa.ng/"+code
-}else if(type=="iframe"){
-
+if(temp[1].split("=")){
+  data=temp[1].split("=") 
+  type=data[0]
+  code=data[1]
+  if(type=="link"){
+  location.href = "https://coupa.ng/"+code
+  }else if(type=="imtt"){
+    imtt=code[1].split(":")
+    linkurl=imtt[0]
+    imgurl="https://static.coupangcdn.com"+imtt[1]
+  }  
+}else{
+  code=temp[1]
+  location.href = "https://coupa.ng/"+code
 }
+
 </script> 
 </HEAD>
 
 <BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
+<a href="" target="_blank"><img class="image1" src="image1.jpg" alt="image">
 </BODY>
 </HTML>

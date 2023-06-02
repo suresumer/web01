@@ -9,6 +9,7 @@
 
 // 1. pluginGetFcmToken
 $('#pluginGetFcmToken').bind('click', function() {
+    alert("pluginGetFcmToken +-+-+-");
     var param = {
     };
     

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plugin 테스트</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>PLUG IN Test</h1>
+<!--            <a href="#" id="btnMoveMain" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Main</a>-->
+        </div>
+        <div role="main" class="ui-content">
+
+            <p>- Plugin 테스트</p>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>테스트 완료</h3>
+                <ul data-role="listview">
+                    <li id="pluginGetFcmToken">001. pluginGetFcmToken</li>
+                    <li id="pluginDeviceInfo">002. pluginDeviceInfo</li>
+                    <li id="pluginGetDeviceID">003. pluginGetDeviceID</li>
+                    <li id="pluginGetDeviceIDInc">004. pluginGetDeviceIDInc</li>
+                    <li id="pluginGetTelecom">005. pluginGetTelecom</li>
+                    <!--<li id="pluginGetSimIccid">006. pluginGetSimIccid</li>-->
+                    <li id="pluginGetPhoneNumber">007. pluginGetPhoneNumber</li>
+                    <li id="pluginGetNetworkInfo">008. pluginGetNetworkInfo</li>
+                    <li id="pluginGetLocationSetting">009. pluginGetLocationSetting</li>
+                    <li id="pluginOpenLocationSetting">010. pluginOpenLocationSetting</li>
+                    <li id="pluginSetUserData">011. pluginSetUserData</li>
+                    <li id="pluginGetUserData">012. pluginGetUserData</li>
+                    <li id="pluginClearUserData">013. pluginClearUserData</li>
+                    <li id="pluginSetLocalData">017. pluginSetLocalData</li>
+                    <li id="pluginGetLocalData">018. pluginGetLocalData</li>
+                    <li id="pluginDeleteLocalData">019. pluginDeleteLocalData</li>
+                    <!-- Chatbot Start -->
+                    <li id="pluginOpenChatbot">022. pluginOpenChatbot</li>
+                    <li id="pluginIsOpenChatbot">023. pluginIsOpenChatbot</li>
+                    <li id="pluginCloseChatbot">024. pluginCloseChatbot</li>
+                    <li id="pluginGetChatbotTalk">025. pluginGetChatbotTalk</li>
+                    <li id="pluginSaveChatbotTalk">026. pluginSaveChatbotTalk</li>
+                    <!-- Chatbot End -->
+                    <li id="pluginUpdateWidgetInfo">027. pluginUpdateWidgetInfo</li>
+                    <li id="pluginCertifyPIN">033. pluginCertifyPIN</li>
+                    <li id="pluginSavePIN">034. pluginSavePIN</li>
+                    <li id="pluginGetCreatePIN">035. pluginGetCreatePIN</li>
+                    <li id="pluginClearPIN">036. pluginClearPIN</li>
+                    <li id="pluginResume">037. pluginResume</li>
+                    <li id="pluginPause">038. pluginPause</li>
+                    <li id="pluginExitApp">040. pluginExitApp</li>
+                    <li id="pluginChangeBrightness">041. pluginChangeBrightness</li>
+                    <li id="pluginOnWebload">042. pluginOnWebload</li>
+                    <li id="pluginShowToastMessage">043. pluginShowToastMessage</li>
+                    <li id="pluginAlert">044. pluginAlert</li>
+                    <li id="pluginConfirm">045. pluginConfirm</li>
+                    <li id="pluginOpenMyLgId">046. pluginOpenMyLgId</li>
+                    <li id="pluginLoadUrl">047. pluginLoadUrl</li>
+                    <li id="pluginOpenPopupWebview">048. pluginOpenPopupWebview</li>
+                    <li id="pluginClosePopupWebview">049. pluginClosePopupWebview</li>
+                    <li id="pluginOpenApp">050. pluginOpenApp</li>
+                    <li id="pluginOpenDialer">051. pluginOpenDialer</li>
+                    <li id="pluginOpenBrowser">052. pluginOpenBrowser</li>
+                    <li id="pluginEncryptText">053. pluginEncryptText</li>
+                    <li id="pluginCopyClipboard">055. pluginCopyClipboard</li>
+                    <li id="pluginPickupContact">056. pluginPickupContact</li>
+                    <!--<li id="pluginCloseIntroView">057. pluginCloseIntroView (검토)</li>-->
+                    <!--<li id="pluginCloseWindow">058. pluginCloseWindow (검토)</li>-->
+                    <li id="pluginOpenCertManager">060. pluginOpenCertManager</li>
+                    <!-- FIDO 인증 Start -->
+                    <li id="pluginFidoCheckAvailable">062. pluginFidoCheckAvailable</li>
+                    <li id="pluginFidoRegistStatus">063. pluginFidoRegistStatus</li>
+                    <li id="pluginFidoRegist">064. pluginFidoRegist</li>
+                    <li id="pluginFidoAuth">065. pluginFidoAuth</li>
+                    <li id="pluginFidoRelease">066. pluginFidoRelease</li>
+                    <!-- FIDO 인증 End -->
+                    <li id="pluginSetMobileNum">067. pluginSetMobileNum</li>
+                    <li id="pluginGetCTNInfo">069. pluginGetCTNInfo</li>
+                    <li id="pluginOpenFileChooser">070. pluginOpenFileChooser</li>
+                    <li id="pluginKakaoCert">071. pluginKakaoCert</li>
+                    <li id="pluginCheckAppInstall">072. pluginCheckAppInstall</li>
+                    <li id="pluginSetLocalDataList">073. pluginSetLocalDataList</li>
+                    <li id="pluginSetUserDataList">074. pluginSetUserDataList</li>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>테스트 진행 중</h3>
+                <ul data-role="listview">
+                    <!--<li id="pluginRoamingDialog">000. pluginRoamingDialog</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="pageNative.js"></script>
+</body>
+</html>

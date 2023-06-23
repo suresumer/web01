@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plugin 테스트</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>PLUG IN Test</h1>
+<!--            <a href="#" id="btnMoveMain" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Main</a>-->
+        </div>
+        <div role="main" class="ui-content">
+
+            <p>- Plugin 테스트</p>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>테스트 완료</h3>
+                <ul data-role="listview">
+                    <li id="pluginDeviceInfo">001. pluginDeviceInfo</li>
+                    <li id="pluginResumeEvent">002. pluginResumeEvent</li>
+                    <li id="pluginPauseEvent">003. pluginPauseEvent</li>
+<!--                    <li id="pluginPauseEvent">004. pluginBackKeyEvent</li>-->
+                    <li id="pluginShakeEvent">005. pluginShakeEvent</li>
+                    <li id="pluginExitApp">006. pluginExitApp</li>
+                    <!-- Webview Start -->
+                    <li id="pluginLoadUrl">007. pluginLoadUrl</li>
+                    <li id="pluginOpenPopupWebview">008. pluginOpenPopupWebview</li>
+                    <li id="pluginGetClosePopupWebview">009. pluginGetClosePopupWebview</li>
+                    <!-- Webview End -->
+                    <!-- 공동인증 Start -->
+                    <li id="pluginCertInfo">010. pluginCertInfo</li>
+                    <li id="pluginCertSign">011. pluginCertSign</li>
+                    <li id="pluginCertMDSign">012. pluginCertMDSign</li>
+                    <li id="pluginCertScrapingSign">013. pluginCertScrapingSign</li>
+                    <li id="pluginCertRelay">014. pluginCertRelay</li>
+                    <!-- 공동인증 End -->
+                    <!-- 스크랩핑 Start -->
+                    <li id="pluginScrapingRun">015. pluginScrapingRun</li>
+                    <!-- 스크랩핑 End -->
+                    <!-- 외부연계 Start -->
+                    <li id="pluginpluginOpenDialer">016. pluginpluginOpenDialer</li>
+                    <li id="pluginOpenBrowser">017. pluginOpenBrowser</li>
+                    <!-- 외부연계 End -->
+                    <!-- Data Start -->
+                    <li id="pluginSetData">018. pluginSetData</li>
+                    <li id="pluginIsGetData">019. pluginIsGetData</li>
+                    <li id="pluginDeleteData">020. pluginDeleteData</li>
+                    <li id="pluginSetPermissionAgree">021. pluginSetPermissionAgree</li>
+                    <!-- Data End -->
+                    <!-- 화면캡쳐방지 Start -->
+                    <li id="pluginAntiCapture">022. pluginAntiCapture</li>
+                    <!-- 화면캡쳐방지 end -->
+                    <!-- 위변조방지 Start -->
+                    
+                    <li id="pluginAppIronCheckInfo">023. pluginAppIronCheckInfo</li>
+                    <li id="pluginAppIronCheckStart">024. pluginAppIronCheckStart</li>
+                    <!-- 위변조방지 End -->
+                    <!-- Push Start -->
+                    <li id="pluginPushRegistration">025. pluginPushRegistration</li>
+                    <li id="pluginPushAlert">026. pluginPushAlert</li>
+                    <!-- Push End -->
+                    <!-- FIDO 인증 Start -->
+                    <li id="pluginFidoCheckAvailable">027. pluginFidoCheckAvailable</li>
+                    <li id="pluginFidoRegistStatus">028. pluginFidoRegistStatus</li>
+                    <li id="pluginFidoRegist">029. pluginFidoRegist</li>
+                    <li id="pluginFidoAuth">030. pluginFidoAuth</li>
+                    <li id="pluginFidoRelease">031. pluginFidoRelease</li>
+                    <!-- FIDO 인증 End -->
+                </ul>
+            </div>
+            
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>테스트 진행 중</h3>
+                <ul data-role="listview">
+                    <!--<li id="pluginRoamingDialog">000. pluginRoamingDialog</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/pageNativePlugin.js"></script>
+</body>
+</html>

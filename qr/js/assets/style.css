@@ -3,7 +3,7 @@ BODY, TH, TD, INPUT, SELECT, TEXTAREA {
   font-family: Verdana, Arial, sans-serif;
 }
 
-H1 { font-size: 18pt; }
+H1 { font-size: 40pt; text-align: center;}
 H2 { font-size: 14pt; }
 H3 { font-size: 12pt; }
 H4 { font-size: 10pt; }
@@ -25,7 +25,11 @@ DIV.page-footer {
 }
 
 DIV.section {
-  margin: 16px 0px 16px 0px;
+  margin: 100px 0px 50px 0px;
+  align-items: center;
+  align-self: center;
+  align-items: center;
+  /* align-content: center; */
 }
 
 #dataCaps TABLE {
@@ -38,4 +42,26 @@ DIV.section {
   margin: 0px;
   padding: 0px 4px 0px 4px;
   border: 1px solid #000000;
+}
+
+DIV.qr {
+  align-self: center;
+  align-items: center;
+}
+
+p {
+  /* 수평 중앙 정렬하기 */
+  text-align: center;
+}
+
+textarea {
+  /* width: 100%;
+  height: 100px;
+  padding: 10px 10px; */
+  font-size: 30px;
+}
+
+textarea::placeholder {
+  /* font-size: 1.2em; */
+  font-size: 30px;
 }

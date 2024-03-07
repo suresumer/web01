@@ -1,1 +1,65 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+  <script type="text/javascript" src="../qrcode.js"></script>
+  <script type="text/javascript" src="../qrcode_SJIS.js"></script>
+  <script type="text/javascript" src="assets/sample.js"></script>
+  <link rel="stylesheet" href="assets/style.css" type="text/css" />
+  <title itemprop="name">QR Code Generator</title>
+</head>
+
+<body onload="body_loadHander()" >
+
+<img itemprop="image" src="assets/qrcode.png" style="display:none;"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>Ticket issuance</h1>
+
+<!-- <div itemprop="description"><h1>고객님의 전화번호를 입력하세요.</h1></div> -->
+<div itemprop="description"><h1>----------------------</h1></div>
+
+<div class="section" >
+
+  <form name="qrForm" >
+    <span hidden="true">TypeNumber:</span>
+    <select name="t" hidden="true"></select>
+    <span hidden="true">ErrorCorrectionLevel:</span>
+    <select name="e" hidden="true">
+      <option value="L">L(7%)</option>
+      <option value="M" selected="selected">M(15%)</option>
+      <option value="Q">Q(25%)</option>
+      <option value="H">H(30%)</option>
+    </select>
+    <span hidden="true">Mode:</span>
+    <select name="m" hidden="true">
+      <option value="Numeric">Numeric</option>
+      <option value="Alphanumeric">Alphanumeric</option>
+      <option value="Byte" selected>Byte</option>
+      <option value="Kanji">Kanji</option>
+    </select>
+    <span hidden="true">Multibyte:</span>
+    <select name="mb" hidden="true">
+      <option value="default">None</option>
+      <option value="SJIS">SJIS</option>
+      <option value="UTF-8" selected>UTF-8</option>
+    </select>
+    <br/>
+  
+    <textarea name="msg" rows="1" cols="30" font-size="40" placeholder="This is textarea. Input some text..."></textarea>
+    <input type="button" value="update" style="WIDTH: 60pt; HEIGHT: 50pt" onclick="update_qrcode()"/>
+    <div id="qr"></div>
+  </form>
+  
+</div>
+
+
+
+</body>
+
+</html>
 

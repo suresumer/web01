@@ -18,7 +18,8 @@
 <br/>
 <br/>
 <br/>
-<h1>Ticket issuance</h1>
+<br/>
+<h1>Ticket</h1>
 
 <!-- <div itemprop="description"><h1>고객님의 전화번호를 입력하세요.</h1></div> -->
 <div itemprop="description"><h1>----------------------</h1></div>
@@ -51,7 +52,8 @@
     <br/>
   
     <!-- <textarea name="msg" rows="1" cols="30" font-size="40" placeholder="This is textarea. Input some text..."></textarea> -->
-    <input type="number" name="msg" max="11" maxlength="11" pattern="\d*" placeholder="number">
+    <input type="text" name="msg" max="11" font-size="30px" style="width:300px;height: 60px;" maxlength="11" size="100" pattern="\d*" pattern="[0-9]+" placeholder="number">
+    <!-- <input type="tel" name="msg" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" /> -->
     <input type="button" value="update" style="WIDTH: 60pt; HEIGHT: 50pt" onclick="update_qrcode()"/>
     <div id="qr"></div>
   </form>
@@ -63,4 +65,3 @@
 </body>
 
 </html>
-

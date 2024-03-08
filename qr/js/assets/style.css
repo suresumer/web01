@@ -1,4 +1,11 @@
-BODY, TH, TD, INPUT, SELECT, TEXTAREA {
+body { 
+  min-height: 100vh; 
+  font-size: 10pt;
+  font-family: Verdana, Arial, sans-serif;
+
+}
+
+TH, TD, SELECT, TEXTAREA {
   font-size: 10pt;
   font-family: Verdana, Arial, sans-serif;
 }
